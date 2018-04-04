@@ -1,4 +1,5 @@
 
+
 object Test extends App {
   if (args.length == 0) {
     println("add some parameters")
@@ -8,8 +9,12 @@ object Test extends App {
     str1.length == str2.length
   }
 
+  def bigger(i: Int, y: Int): Int = {
+    if(i > y) i else y
+  }
+
   println(compare(args(0), args(1)))
 
-  println("Test!")
+  println(bigger(args(0).toInt, args(1).toInt))
 
 }
