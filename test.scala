@@ -10,4 +10,6 @@ object Test extends App {
 
   println(compare(args(0), args(1)))
 
+  println("Test!")
+
 }
